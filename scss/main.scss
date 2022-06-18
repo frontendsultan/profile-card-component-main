@@ -1,0 +1,131 @@
+:root {
+    // ### Primary
+
+--Darkcyan: hsl(185, 75%, 39%);
+--Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+--Darkgrayishblue: hsl(227, 10%, 46%);
+
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+    font-size:1rem;
+}
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--Darkcyan);
+    // background-color: black;
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    color:var(--Verydarkdesaturatedblue);
+}
+h2 {
+    color:var(--Darkgrayishblue);
+    font-weight: 400;
+}
+
+.container {
+    
+    // background-position: -20vw -90vh,40vw 40vh;  
+    background-image:url(../images/bg-pattern-top.svg),url(../images/bg-pattern-bottom.svg);
+    // background-position: -700px -600px,40vw 40vh;
+   background-position: calc(-800px + 42vw) -660px ,40vw 40vh;
+    background-attachment: fixed, fixed;
+    background-repeat: no-repeat;
+    width:100%;
+    height:100vh;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row {
+    width:80%;
+    // border:1px solid red;
+    background-color: white;
+    border-radius: 1rem;
+    max-width:300px;
+}
+
+// .pattern img {
+//     border-top-left-radius: 1rem;
+//     border-top-right-radius: 1rem;
+//     width:100%;
+    
+// }
+h1 {
+    font-size: 1.5rem;
+    margin:0rem;
+}
+h2 {
+    margin:0rem;
+}
+.profile__img {
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    // border-bottom: 1px solid black;
+    background: url(../images/bg-pattern-card.svg);
+    padding-top:2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.profile__img img {
+    border:0.5rem solid white;
+    position: relative;
+    top:42px;
+    border-radius: 100%;
+    max-width:85px;
+    
+}
+
+.name__container {
+    padding-top:4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    h1 + span {
+        margin-left:1rem;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+    span {
+        color:var(--Darkgrayishblue);
+        font-size: 1rem;
+    }
+}
+.place__container {
+    text-align: center;
+    
+    h2 {
+    margin-top:0.5rem;
+    padding-top:0rem;
+    font-size:1rem;
+}
+}
+
+
+.profile__info {
+    padding-top:4rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+.col {
+    text-align: center;
+    flex:1;
+    h1 {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 15px;
+    }
+}
